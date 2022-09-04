@@ -1,0 +1,133 @@
+/*Estilos Main Index*/
+
+.main{
+    grid-area: main;
+    /* Estilo Banner */
+    .banner{
+        width: 100%;
+        height: 400px;
+        }
+        
+    /* Estilo título Principal */
+    .titulo {
+        margin-bottom: 5px;
+        height: 100px;
+        padding: 25px;
+        color: darkgray;
+        border-bottom: 2px  rgb(237, 174, 201) solid;
+        text-align: center;
+        font-style: italic;
+        font-weight: normal;
+        /* gradientes */
+        background-image: radial-gradient(white 65%,darkgray);
+        /* transformaciones */
+        animation-name: tituloCambiante;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: ease-in;
+    }
+
+    /* Estilo Imagenes */
+    .imgDestacadas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin-bottom: 60px;
+        img{
+            width: 280px;
+            height: 280px;
+            border-radius: 8px;
+            margin: 15px;
+            margin-bottom: 70px;
+            margin-top: 50px;
+            border: 2px  rgb(237, 174, 201) solid;  
+            /* tranformaciones animaciones */
+            &:hover{
+                transform:translate(5px, 5px);
+                transition: .3s;
+            } 
+        }
+    }
+
+    /* Estilo Primera Sección */
+    .primeraSeccion {
+        background-color: white;
+        line-height: 1.5;
+        font-style: italic;
+        font-weight: normal;
+        text-align: center;
+        color: darkgray;
+        margin: 70px;   
+    }
+
+    /* Estilo Segunda Sección */
+    .segundaSeccion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        background-color: white;
+        line-height: 2;
+        text-align: center;
+        color: darkgray;
+        font-weight: normal;
+        font-style: italic;
+        .enLinea {
+            margin: 20px 0px;
+            width: 200px;
+            height: 150px;  
+            margin: 20px 0px;
+            padding: 10px; 
+        }
+    }
+
+    /* Estilo Tercera Sección */
+    .terceraSeccion {
+        background-color: white;
+        line-height: 2;
+        font-style: italic;
+        font-weight: normal;
+        text-align: center;
+        color: darkgray;
+        margin: 40px;
+        font-size: 18px;
+        .input {
+            border: 0.5px darkgray solid;
+            width: 250px;
+            height: 45px;
+            padding: 8px;
+        }
+        .colorButton {
+            background-color:  rgb(226, 212, 218);
+            color: dimgray;
+            border: 0.5px darkgray solid;
+            width: 150px;
+            height: 45px;
+            padding: 4px;
+            margin-top: 5px;
+            &:hover{
+                background-color: rgb(237, 174, 201);
+            }
+        }       
+
+    }
+
+    /* Estilo Enlaces */
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        .sinDecorar {
+            text-decoration: none;
+            color: darkgray;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+
+
+}

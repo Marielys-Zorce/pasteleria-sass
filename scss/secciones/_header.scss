@@ -1,0 +1,42 @@
+/* Estilos Header*/
+
+.header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px  rgb(237, 174, 201) solid;
+    z-index: 100; 
+    height: 110px;
+    /* gradientes */
+    background-image: linear-gradient(white 85%, rgb(242, 196, 216));
+         
+        .colorNav{
+            background-color:white;
+        }
+
+                .logo{
+                    width: 50px;
+                    height: 60px;
+                }
+            
+                    .letraGrande{
+                        margin-left: 1.5rem;
+                        font-size: 20px;
+                    }
+
+                    .colorButton{
+                        background-color:  rgb(226, 212, 218);
+                        color: dimgray;
+                        &:hover{
+                            background-color: rgb(237, 174, 201);
+                        }
+                    }                                   
+}  
+
+
+    
+    
+
+
+
+

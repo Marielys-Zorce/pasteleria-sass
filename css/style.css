@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&family=Taviraj:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Domine', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Taviraj', serif;
+  box-sizing: border-box; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+.wapp img {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 90px;
+  right: 40px;
+  background-color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 100; }
+
+/* Estilos Header*/
+.header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  border-bottom: 2px #edaec9 solid;
+  z-index: 100;
+  height: 110px;
+  /* gradientes */
+  background-image: linear-gradient(white 85%, #f2c4d8); }
+  .header .colorNav {
+    background-color: white; }
+  .header .logo {
+    width: 50px;
+    height: 60px; }
+  .header .letraGrande {
+    margin-left: 1.5rem;
+    font-size: 20px; }
+  .header .colorButton {
+    background-color: #e2d4da;
+    color: dimgray; }
+    .header .colorButton:hover {
+      background-color: #edaec9; }
+
+/*Estilos Main Index*/
+.main {
+  grid-area: main;
+  /* Estilo Banner */
+  /* Estilo título Principal */
+  /* Estilo Imagenes */
+  /* Estilo Primera Sección */
+  /* Estilo Segunda Sección */
+  /* Estilo Tercera Sección */
+  /* Estilo Enlaces */ }
+  .main .banner {
+    width: 100%;
+    height: 400px; }
+  .main .titulo {
+    margin-bottom: 5px;
+    height: 100px;
+    padding: 25px;
+    color: darkgray;
+    border-bottom: 2px #edaec9 solid;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    /* gradientes */
+    background-image: radial-gradient(white 65%, darkgray);
+    /* transformaciones */
+    animation-name: tituloCambiante;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in; }
+  .main .imgDestacadas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px; }
+    .main .imgDestacadas img {
+      width: 280px;
+      height: 280px;
+      border-radius: 8px;
+      margin: 15px;
+      margin-bottom: 70px;
+      margin-top: 50px;
+      border: 2px #edaec9 solid;
+      /* tranformaciones animaciones */ }
+      .main .imgDestacadas img:hover {
+        transform: translate(5px, 5px);
+        transition: .3s; }
+  .main .primeraSeccion {
+    background-color: white;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: darkgray;
+    margin: 70px; }
+  .main .segundaSeccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    background-color: white;
+    line-height: 2;
+    text-align: center;
+    color: darkgray;
+    font-weight: normal;
+    font-style: italic; }
+    .main .segundaSeccion .enLinea {
+      margin: 20px 0px;
+      width: 200px;
+      height: 150px;
+      margin: 20px 0px;
+      padding: 10px; }
+  .main .terceraSeccion {
+    background-color: white;
+    line-height: 2;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: darkgray;
+    margin: 40px;
+    font-size: 18px; }
+    .main .terceraSeccion .input {
+      border: 0.5px darkgray solid;
+      width: 250px;
+      height: 45px;
+      padding: 8px; }
+    .main .terceraSeccion .colorButton {
+      background-color: #e2d4da;
+      color: dimgray;
+      border: 0.5px darkgray solid;
+      width: 150px;
+      height: 45px;
+      padding: 4px;
+      margin-top: 5px; }
+      .main .terceraSeccion .colorButton:hover {
+        background-color: #edaec9; }
+  .main .enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; }
+    .main .enlaces .sinDecorar {
+      text-decoration: none;
+      color: darkgray;
+      font-size: 20px;
+      font-weight: bold; }
+
+/*Estilos Footer*/
+.footer {
+  grid-area: footer;
+  border-top: 2px #e2d4da solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 175px;
+  /* gradientes */
+  background-image: linear-gradient(to top, #edaec9, #e2d4da); }
+  .footer .textoChico {
+    font-size: 15px;
+    color: black;
+    position: relative;
+    top: 60px; }
+  .footer .imgRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px; }
+    .footer .imgRedes img {
+      width: 30px;
+      margin-right: 20px; }
