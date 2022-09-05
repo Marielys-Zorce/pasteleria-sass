@@ -1,5 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&family=Taviraj:wght@400;500;700&display=swap");
+.main .titulo {
+  margin-bottom: 5px;
+  height: 100px;
+  padding: 25px;
+  color: darkgray;
+  border-bottom: 2px #edaec9 solid;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  /* gradientes */
+  background-image: radial-gradient(white 65%, darkgray); }
+
+.main .terceraSeccion .boton {
+  background-color: #e2d4da;
+  color: dimgray;
+  border: 0.5px darkgray solid;
+  border-radius: 5px;
+  width: 150px;
+  height: 45px;
+  padding: 4px;
+  margin-top: 5px; }
+  .main .terceraSeccion .boton:hover {
+    background-color: #edaec9; }
+
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +79,27 @@
   grid-area: main;
   /* Estilo Banner */
   /* Estilo título Principal */
-  /* Estilo Imagenes */
+  /*.titulo {
+        margin-bottom: 5px;
+        height: 100px;
+        padding: 25px;
+        color: darkgray;
+        border-bottom: 2px  rgb(237, 174, 201) solid;
+        text-align: center;
+        font-style: italic;
+        font-weight: normal;*/
+  /* gradientes */
+  /* background-image: radial-gradient(white 65%,darkgray);*/
+  /* transformaciones */
+  /* animation-name: tituloCambiante;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: ease-in;
+    }
+    
+    
+    /* Estilo Imagenes */
   /* Estilo Primera Sección */
   /* Estilo Segunda Sección */
   /* Estilo Tercera Sección */
@@ -63,23 +107,6 @@
   .main .banner {
     width: 100%;
     height: 400px; }
-  .main .titulo {
-    margin-bottom: 5px;
-    height: 100px;
-    padding: 25px;
-    color: darkgray;
-    border-bottom: 2px #edaec9 solid;
-    text-align: center;
-    font-style: italic;
-    font-weight: normal;
-    /* gradientes */
-    background-image: radial-gradient(white 65%, darkgray);
-    /* transformaciones */
-    animation-name: tituloCambiante;
-    animation-duration: .8s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: ease-in; }
   .main .imgDestacadas {
     display: flex;
     flex-direction: row;
@@ -106,6 +133,16 @@
     text-align: center;
     color: darkgray;
     margin: 70px; }
+  .main .subTitulo {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Taviraj', serif;
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    color: darkgray; }
   .main .segundaSeccion {
     display: flex;
     flex-direction: row;
@@ -132,22 +169,24 @@
     text-align: center;
     color: darkgray;
     margin: 40px;
-    font-size: 18px; }
+    font-size: 18px;
+    /*.colorButton {
+            background-color:  rgb(226, 212, 218);
+            color: dimgray;
+            border: 0.5px darkgray solid;
+            width: 150px;
+            height: 45px;
+            padding: 4px;
+            margin-top: 5px;
+            &:hover{
+                background-color: rgb(237, 174, 201);
+            }
+        } */ }
     .main .terceraSeccion .input {
       border: 0.5px darkgray solid;
       width: 250px;
       height: 45px;
       padding: 8px; }
-    .main .terceraSeccion .colorButton {
-      background-color: #e2d4da;
-      color: dimgray;
-      border: 0.5px darkgray solid;
-      width: 150px;
-      height: 45px;
-      padding: 4px;
-      margin-top: 5px; }
-      .main .terceraSeccion .colorButton:hover {
-        background-color: #edaec9; }
   .main .enlaces {
     display: flex;
     flex-direction: column;

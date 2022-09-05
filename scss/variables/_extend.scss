@@ -1,0 +1,27 @@
+%estiloTitulo{
+    margin-bottom: 5px;
+    height: 100px;
+    padding: 25px;
+    color: darkgray;
+    border-bottom: 2px  rgb(237, 174, 201) solid;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    /* gradientes */
+    background-image: radial-gradient(white 65%,darkgray);
+}
+
+%estiloBoton {
+    background-color:  rgb(226, 212, 218);
+    color: dimgray;
+    border: 0.5px darkgray solid;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    padding: 4px;
+    margin-top: 5px;
+    &:hover{
+        background-color: rgb(237, 174, 201);
+    }
+}
+
