@@ -57,7 +57,10 @@
     }
 
     /* Estilo Primera Sección */
-    .primeraSeccion {
+    .primeraSeccion{
+        @include estiloFuente;
+    }
+    /*.primeraSeccion {
         background-color: white;
         line-height: 1.5;
         font-style: italic;
@@ -65,7 +68,7 @@
         text-align: center;
         color: darkgray;
         margin: 70px;   
-    }
+    }*/
 
     /* Estilo Segunda Sección */
     .subTitulo{

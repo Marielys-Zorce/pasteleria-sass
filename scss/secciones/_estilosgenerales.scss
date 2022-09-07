@@ -21,6 +21,11 @@
 
 .wapp{
     img{
+        @include estiloWapp (#25d366);
+    }
+}
+/*.wapp{
+    img{
         position: fixed;
         width: 50px;
         height: 50px;
@@ -32,4 +37,4 @@
         z-index: 100;
     }
     
-}
+}*/

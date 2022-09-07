@@ -24,6 +24,7 @@
   .main .terceraSeccion .boton:hover {
     background-color: #edaec9; }
 
+/*Mixins*/
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +51,20 @@
   text-align: center;
   z-index: 100; }
 
+/*.wapp{
+    img{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 90px;
+        right: 40px;
+        background-color: #25d366;
+        border-radius: 50px;
+        text-align: center;
+        z-index: 100;
+    }
+    
+}*/
 /* Estilos Header*/
 .header {
   grid-area: header;
@@ -101,6 +116,15 @@
     
     /* Estilo Imagenes */
   /* Estilo Primera Sección */
+  /*.primeraSeccion {
+        background-color: white;
+        line-height: 1.5;
+        font-style: italic;
+        font-weight: normal;
+        text-align: center;
+        color: darkgray;
+        margin: 70px;   
+    }*/
   /* Estilo Segunda Sección */
   /* Estilo Tercera Sección */
   /* Estilo Enlaces */ }
@@ -227,6 +251,131 @@
       font-style: italic;
       line-height: 1.5;
       font-size: 20px; }
+
+/* Media Querys */
+/* Estrategia Mobile Last */
+@media (max-width: 435px) {
+  .main h1 div .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    .main h1 div .imgTex .estiloImg {
+      width: 120px;
+      height: 100px;
+      margin: 5px; }
+    .main h1 div .imgTex .estiloTexto {
+      font-size: 15px;
+      margin-bottom: 25px; } }
+
+@media (max-width: 380px) {
+  .main div .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    .main div .imgTex .estiloImg {
+      width: 80px;
+      height: 70px;
+      margin: 5px; }
+    .main div .imgTex .estiloTexto {
+      font-size: 15px;
+      margin-bottom: 25px; } }
+
+@media (max-width: 320px) {
+  .main div .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    .main div .imgTex .estiloImg {
+      width: 30px;
+      height: 40px;
+      margin: 5px; }
+    .main div .imgTex .estiloTexto {
+      font-size: 15px;
+      margin-bottom: 25px; } }
+
+.main {
+  grid-area: main;
+  /* Estilo título Principal */
+  /*.titulo {
+        margin-bottom: 5px;
+        height: 100px;
+        padding: 25px;
+        color: darkgray;
+        border-bottom: 2px  rgb(237, 174, 201) solid;
+        text-align: center;
+        font-style: italic;
+        font-weight: normal;*/
+  /* gradientes */
+  /* background-image: radial-gradient(white 65%,darkgray);*/
+  /* transformaciones */
+  /* animation-name: tituloCambiante;
+        animation-duration: .8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: ease-in;
+    }
+    
+    
+    /* Estilo Imagenes */ }
+  .main .imgDestacadas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px; }
+    .main .imgDestacadas img {
+      width: 280px;
+      height: 280px;
+      border-radius: 8px;
+      margin: 15px;
+      margin-bottom: 70px;
+      margin-top: 50px;
+      border: 2px #edaec9 solid;
+      /* tranformaciones animaciones */ }
+      .main .imgDestacadas img:hover {
+        transform: translate(5px, 5px);
+        transition: .3s; }
+
+/*Estilos Main Nuestros Locales*/
+.main {
+  grid-area: main;
+  /* Estilo título Principal */
+  /*Estilo Imagenes y Texto */ }
+  .main .tituloDos {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: darkgray;
+    text-align: left;
+    font-style: italic;
+    font-weight: normal; }
+  .main div .estiloImg {
+    width: 475px;
+    height: 315px;
+    margin: 25px;
+    padding: 20px;
+    /*position:relative;
+            justify-content:left;
+            top: 10px;*/ }
+  .main div .estiloTexto {
+    padding: 20px;
+    margin: 25px;
+    width: 550px;
+    height: 315px;
+    text-align: justify;
+    color: darkgray;
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 20px; }
 
 /*Estilos Footer*/
 .footer {

@@ -1,0 +1,24 @@
+/*Mixins*/
+
+@mixin estiloFuente {
+    background-color: white;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color: darkgray;
+    margin: 70px;
+}
+
+@mixin estiloWapp ($colorFondo) {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    right: 40px;
+    background-color: $colorFondo;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 100;
+    
+}
