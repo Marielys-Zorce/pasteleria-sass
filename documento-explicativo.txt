@@ -1,0 +1,32 @@
+               //DOCUMENTO EXPLICATIVO DEL SEO//
+
+ A continuación se describen las características aplicadas para el SEO
+    
+    1.- Archivo index.html:
+       - Por medio de la etiqueta <meta name="keywords">, se utilizarón las siguientes palabras claves:"pastelería,repostería,tortas,pasteles,cakes,postres"
+       - A través de la etiqueta <meta name="Description"> se escribió un párrafo, que presenta brevemente la misión de la empresa "Pastelería Zorce, es una empresa familiar que combina lo tradicional, con bellas y exquisitas creaciones".
+       - Utilizando la etiqueta <title></title>, se cambió el título anteponiendo el nombre de la empresa, seguido por el contenido de la página "Pastelería Zorce|Inicio"
+    
+    
+    2.- Página sobreNosotros.html:
+       - A través de la etiqueta <meta name="keywords"> se aplicarón las siguientes palabras claves "pastelería,conócenos,nosotros,historia,tortas,cakes"
+       - Con el uso de la etiqueta <meta name="Description"> se realizó la descripción de la página "Conoce quienes trabajamos en Pastelería Zorce, para ofrecerte los más deliciosos sabores y complacer las preferencias de nuestros clientes."
+       - Por medio de la etiqueta <title></title>, se aplicó el mismo cambio utilizado en el index, igualmente se aplicó a las demás páginas "Pastelería Zorce|Sobre Nosotros"
+   
+   
+    3.- Página productos.html:
+       - Utilizando la etiqueta <meta name="keywords"> se agregaron las palabras claves "pastelería,tortas,cheesecake,galletas,dulces,postres"
+       - A través de la etiqueta <meta name="Description"> se escribió la siguiente descripción "En Pastelería Zorce, ofrecemos gran variedad en tortas,cheesecake,cupcake,galletas y pasteles con sabores únicos y de excelente calidad."
+       - Con el uso de la etiqueta <title></title>, se realizó el siguiente cambio al título de la página "Pastelería Zorce|Productos"
+    
+    
+    4.- Página nuestrosLocales.html:
+       - A través de la etiqueta <meta name="keywords"> se utilizarón las palabras claves "pastelería,locales,tiendas,visitanos,ubicación,dirección"
+       - Utilizando la etiqueta <meta name="Description"> se comentó "Ven a cualquiera de nuestros 2 locales y disfruta de los más ricos y variados postres en un lugar cálido y con una atención especial."
+       - Por medio de la etiqueta <title></title>, se cambió el titulo a "Pastelería Zorce|Locales"
+    
+    
+    5.- Página contactenos.html:
+       - Con el uso de la etiqueta <meta name="keywords"> se aplicaron las palabras claves "pastelería,contáctanos,comunícate,atención,consultas,soporte"
+       - A través de la etiqueta <meta name="Description"> se escribió "Comuniquese si necesita hacer preguntas, sugerencias o reclamos. Nuestro equipo de soporte se contactará con usted lo antes posible."
+       - Por medio de la etiqueta <title></title>, se modificó el titulo a "Pastelería Zorce|Contacto"
