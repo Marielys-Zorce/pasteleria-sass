@@ -28,5 +28,5 @@
     
     5.- Página contactenos.html:
        - Con el uso de la etiqueta <meta name="keywords"> se aplicaron las palabras claves "pastelería,contáctanos,comunícate,atención,consultas,soporte"
-       - A través de la etiqueta <meta name="Description"> se escribió "Comuniquese si necesita hacer preguntas, sugerencias o reclamos. Nuestro equipo de soporte se contactará con usted lo antes posible."
+       - A través de la etiqueta <meta name="Description"> se escribió "Si necesitas realizar algún pedido, hacer preguntas contáctenos a través de nuestro formulario."
        - Por medio de la etiqueta <title></title>, se modificó el titulo a "Pastelería Zorce|Contacto"
