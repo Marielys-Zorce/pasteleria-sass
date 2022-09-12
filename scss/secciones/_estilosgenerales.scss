@@ -12,7 +12,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px auto auto auto;
+    grid-template-rows: 100px auto auto;
     grid-template-areas:
         "header"
         "main"
@@ -24,17 +24,3 @@
         @include estiloWapp (#25d366);
     }
 }
-/*.wapp{
-    img{
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 90px;
-        right: 40px;
-        background-color: #25d366;
-        border-radius: 50px;
-        text-align: center;
-        z-index: 100;
-    }
-    
-}*/

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Extend*/
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&family=Taviraj:wght@400;500;700&display=swap");
 .main .titulo {
   margin-bottom: 5px;
@@ -12,16 +13,16 @@
   /* gradientes */
   background-image: radial-gradient(white 65%, darkgray); }
 
-.main .terceraSeccion .boton {
+.main .terceraSeccion .boton, .main .content .formulario .boton {
   background-color: #e2d4da;
   color: dimgray;
   border: 0.5px darkgray solid;
   border-radius: 5px;
-  width: 150px;
+  width: 100px;
   height: 45px;
   padding: 4px;
   margin-top: 5px; }
-  .main .terceraSeccion .boton:hover {
+  .main .terceraSeccion .boton:hover, .main .content .formulario .boton:hover {
     background-color: #edaec9; }
 
 /*Mixins*/
@@ -37,7 +38,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px auto auto auto;
+  grid-template-rows: 100px auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
 .wapp img {
@@ -51,20 +52,6 @@
   text-align: center;
   z-index: 100; }
 
-/*.wapp{
-    img{
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 90px;
-        right: 40px;
-        background-color: #25d366;
-        border-radius: 50px;
-        text-align: center;
-        z-index: 100;
-    }
-    
-}*/
 /* Estilos Header*/
 .header {
   grid-area: header;
@@ -94,37 +81,8 @@
   grid-area: main;
   /* Estilo Banner */
   /* Estilo título Principal */
-  /*.titulo {
-        margin-bottom: 5px;
-        height: 100px;
-        padding: 25px;
-        color: darkgray;
-        border-bottom: 2px  rgb(237, 174, 201) solid;
-        text-align: center;
-        font-style: italic;
-        font-weight: normal;*/
-  /* gradientes */
-  /* background-image: radial-gradient(white 65%,darkgray);*/
-  /* transformaciones */
-  /* animation-name: tituloCambiante;
-        animation-duration: .8s;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
-        animation-timing-function: ease-in;
-    }
-    
-    
-    /* Estilo Imagenes */
+  /* Estilo Imagenes */
   /* Estilo Primera Sección */
-  /*.primeraSeccion {
-        background-color: white;
-        line-height: 1.5;
-        font-style: italic;
-        font-weight: normal;
-        text-align: center;
-        color: darkgray;
-        margin: 70px;   
-    }*/
   /* Estilo Segunda Sección */
   /* Estilo Tercera Sección */
   /* Estilo Enlaces */ }
@@ -154,9 +112,13 @@
     line-height: 1.5;
     font-style: italic;
     font-weight: normal;
+    font-size: 18px;
     text-align: center;
     color: darkgray;
-    margin: 70px; }
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px; }
   .main .subTitulo {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -193,19 +155,7 @@
     text-align: center;
     color: darkgray;
     margin: 40px;
-    font-size: 18px;
-    /*.colorButton {
-            background-color:  rgb(226, 212, 218);
-            color: dimgray;
-            border: 0.5px darkgray solid;
-            width: 150px;
-            height: 45px;
-            padding: 4px;
-            margin-top: 5px;
-            &:hover{
-                background-color: rgb(237, 174, 201);
-            }
-        } */ }
+    font-size: 18px; }
     .main .terceraSeccion .input {
       border: 0.5px darkgray solid;
       width: 250px;
@@ -237,10 +187,7 @@
       width: 475px;
       height: 315px;
       margin: 25px;
-      padding: 20px;
-      /*position:relative;
-            justify-content:left;
-            top: 10px;*/ }
+      padding: 20px; }
     .main .imgTex .estiloTexto {
       padding: 20px;
       margin: 25px;
@@ -263,8 +210,8 @@
     margin-bottom: 50px;
     margin-top: 50px; }
     .main h1 div .imgTex .estiloImg {
-      width: 120px;
-      height: 100px;
+      width: 290px;
+      height: 280px;
       margin: 5px; }
     .main h1 div .imgTex .estiloTexto {
       font-size: 15px;
@@ -279,8 +226,8 @@
     margin-bottom: 50px;
     margin-top: 50px; }
     .main div .imgTex .estiloImg {
-      width: 80px;
-      height: 70px;
+      width: 270px;
+      height: 260px;
       margin: 5px; }
     .main div .imgTex .estiloTexto {
       font-size: 15px;
@@ -305,27 +252,7 @@
 .main {
   grid-area: main;
   /* Estilo título Principal */
-  /*.titulo {
-        margin-bottom: 5px;
-        height: 100px;
-        padding: 25px;
-        color: darkgray;
-        border-bottom: 2px  rgb(237, 174, 201) solid;
-        text-align: center;
-        font-style: italic;
-        font-weight: normal;*/
-  /* gradientes */
-  /* background-image: radial-gradient(white 65%,darkgray);*/
-  /* transformaciones */
-  /* animation-name: tituloCambiante;
-        animation-duration: .8s;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
-        animation-timing-function: ease-in;
-    }
-    
-    
-    /* Estilo Imagenes */ }
+  /* Estilo Imagenes */ }
   .main .imgDestacadas {
     display: flex;
     flex-direction: row;
@@ -362,10 +289,7 @@
     width: 475px;
     height: 315px;
     margin: 25px;
-    padding: 20px;
-    /*position:relative;
-            justify-content:left;
-            top: 10px;*/ }
+    padding: 20px; }
   .main div .estiloTexto {
     padding: 20px;
     margin: 25px;
@@ -377,6 +301,192 @@
     line-height: 1.5;
     font-size: 20px; }
 
+/* Media Querys */
+/* Estrategia Mobile Last */
+@media (max-width: 435px) {
+  .main div .estiloImg {
+    width: 290px;
+    height: 280px;
+    margin: 5px; }
+  .main div .estiloTexto {
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 290px;
+    height: 280px; } }
+
+@media (max-width: 380px) {
+  .main div .estiloImg {
+    width: 270px;
+    height: 260px;
+    margin: 5px; }
+  .main div .estiloTexto {
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 270px;
+    height: 260px; } }
+
+@media (max-width: 320px) {
+  .main div .estiloImg {
+    width: 280px;
+    height: 270px;
+    margin: 5px;
+    align-content: center; }
+  .main div .estiloTexto {
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 280px;
+    height: 270px; } }
+
+/*Estilos Main Contáctenos*/
+.main {
+  grid-area: main;
+  /*Estilo Título*/
+  /* Estilo Primera Sección*/ }
+  .main .primeraSeccion {
+    background-color: white;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: darkgray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .main .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    /* Estilo Formulario */
+    /*Estilo Información de Contacto*/ }
+    .main .content .formulario {
+      padding: 30px;
+      width: 400px;
+      border-radius: 5px;
+      font-size: 18px;
+      color: darkgray;
+      text-align: left;
+      font-style: normal;
+      font-weight: lighter;
+      line-height: 2; }
+      .main .content .formulario .label {
+        display: flex;
+        flex-direction: column; }
+      .main .content .formulario .input {
+        border: 0.5px darkgray solid;
+        width: 300px;
+        height: 30px;
+        padding: 8px; }
+      .main .content .formulario .textarea {
+        border-color: darkgray;
+        width: 300px;
+        height: 150px;
+        padding: 8px; }
+    .main .content .primeraSeccion {
+      background-color: white;
+      line-height: 1.5;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: center;
+      color: darkgray;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .main .content .primeraSeccion {
+      background-color: white;
+      line-height: 1.5;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: center;
+      color: darkgray;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+      margin-right: 20px; }
+
+/* Media Querys */
+/* Estrategia Mobile Last */
+@media (max-width: 1024px) {
+  .main .content {
+    /*Estilo Información de Contacto*/ }
+    .main .content .formulario {
+      padding: 30px;
+      width: 350px;
+      border-radius: 5px;
+      font-size: 14px;
+      color: darkgray;
+      text-align: left;
+      font-style: normal;
+      font-weight: lighter;
+      line-height: 2; }
+      .main .content .formulario .label {
+        display: flex;
+        flex-direction: column; }
+      .main .content .formulario .input {
+        border: 0.5px darkgray solid;
+        width: 280px;
+        height: 30px;
+        padding: 8px; }
+      .main .content .formulario .textarea {
+        border-color: darkgray;
+        width: 280px;
+        height: 150px;
+        padding: 8px; }
+    .main .content .primeraSeccion {
+      font-size: 14px; }
+    .main .content .primeraSeccion {
+      font-size: 14px; } }
+
+@media (max-width: 380px) {
+  .main div .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    .main div .imgTex .estiloImg {
+      width: 270px;
+      height: 260px;
+      margin: 5px; }
+    .main div .imgTex .estiloTexto {
+      font-size: 15px;
+      margin-bottom: 25px; } }
+
+@media (max-width: 320px) {
+  .main .content .formulario {
+    padding: 30px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: darkgray;
+    text-align: left;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 2; }
+    .main .content .formulario .label {
+      display: flex;
+      flex-direction: column; }
+    .main .content .formulario .input {
+      border: 0.5px darkgray solid;
+      width: 250px;
+      height: 30px;
+      padding: 8px; }
+    .main .content .formulario .textarea {
+      border-color: darkgray;
+      width: 250px;
+      height: 130px;
+      padding: 8px; } }
+
 /*Estilos Footer*/
 .footer {
   grid-area: footer;
@@ -385,7 +495,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 175px;
+  height: 170px;
   /* gradientes */
   background-image: linear-gradient(to top, #edaec9, #e2d4da); }
   .footer .textoChico {
@@ -400,4 +510,4 @@
     height: 30px; }
     .footer .imgRedes img {
       width: 30px;
-      margin-right: 20px; }
+      margin: 10px; }

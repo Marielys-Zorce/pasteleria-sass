@@ -2,7 +2,6 @@
 
 .main{
     grid-area: main;
-
         
     /* Estilo título Principal */
     .titulo{
@@ -10,7 +9,6 @@
     }
     
     /*Estilo Imagenes y Texto */
-
     .tituloDos  {
         margin-top: 15px;
         margin-bottom: 10px;
@@ -26,9 +24,6 @@
             height: 315px;
             margin: 25px;
             padding: 20px;
-            /*position:relative;
-            justify-content:left;
-            top: 10px;*/
         }
     
         .estiloTexto {
@@ -42,8 +37,83 @@
             line-height: 1.5;
             font-size: 20px;
         }
-    }
-        
-       
+    }     
 }
+
+/* Media Querys */
+/* Estrategia Mobile Last */
+
+
+
+
+@media(max-width: 435px) {
+    .main{
     
+        div {
+       
+            .estiloImg {
+                width: 290px;
+                height: 280px;
+                margin: 5px;
+                
+            }
+        .estiloTexto {
+            font-size: 15px;
+            margin-bottom: 25px;
+            text-align: center;
+                width: 290px;
+                height: 280px;
+            }
+        }
+
+
+}
+}
+
+@media(max-width: 380px) {
+    .main{
+        div {
+
+            .estiloImg {
+                width: 270px;
+                height: 260px;
+                margin: 5px;
+                
+            }
+        .estiloTexto {
+            font-size: 15px;
+            margin-bottom: 25px;
+            text-align: center;
+                width: 270px;
+                height: 260px;
+            }
+        }
+
+
+}
+}
+
+
+
+@media(max-width: 320px) {
+    .main{
+        div {
+            .estiloImg {
+                width: 280px;
+                height: 270px;
+                margin: 5px;
+                align-content: center;
+                
+            }
+            .estiloTexto {
+                font-size: 15px;
+                margin-bottom: 25px;
+                text-align: center;
+                width: 280px;
+                height: 270px;
+            }
+
+
+}
+}
+}

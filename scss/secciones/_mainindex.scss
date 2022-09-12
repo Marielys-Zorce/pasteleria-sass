@@ -12,26 +12,7 @@
     .titulo{
         @extend %estiloTitulo;
 
-    }
-    /*.titulo {
-        margin-bottom: 5px;
-        height: 100px;
-        padding: 25px;
-        color: darkgray;
-        border-bottom: 2px  rgb(237, 174, 201) solid;
-        text-align: center;
-        font-style: italic;
-        font-weight: normal;*/
-        /* gradientes */
-       /* background-image: radial-gradient(white 65%,darkgray);*/
-        /* transformaciones */
-       /* animation-name: tituloCambiante;
-        animation-duration: .8s;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
-        animation-timing-function: ease-in;
-    }
-    
+    } 
     
     /* Estilo Imagenes */
     .imgDestacadas {
@@ -60,16 +41,7 @@
     .primeraSeccion{
         @include estiloFuente;
     }
-    /*.primeraSeccion {
-        background-color: white;
-        line-height: 1.5;
-        font-style: italic;
-        font-weight: normal;
-        text-align: center;
-        color: darkgray;
-        margin: 70px;   
-    }*/
-
+    
     /* Estilo Segunda Sección */
     .subTitulo{
     margin-top: 0;
@@ -119,19 +91,7 @@
             height: 45px;
             padding: 8px;
         }
-        /*.colorButton {
-            background-color:  rgb(226, 212, 218);
-            color: dimgray;
-            border: 0.5px darkgray solid;
-            width: 150px;
-            height: 45px;
-            padding: 4px;
-            margin-top: 5px;
-            &:hover{
-                background-color: rgb(237, 174, 201);
-            }
-        } */
-        
+                
         .boton {
             @extend %estiloBoton;
         }

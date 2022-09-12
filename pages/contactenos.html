@@ -8,7 +8,8 @@
     <!-- Keywords -->
     <meta name="keywords" content="pastelería,contáctanos,comunícate,atención,consultas,soporte">
     <!-- Description -->
-    <meta name="Description" content="Comuniquese si necesita hacer preguntas, sugerencias o reclamos. Nuestro equipo de soporte se contactará con usted lo antes posible.">
+    <meta name="Description"
+        content="Si necesitas realizar algún pedido, hacer preguntas contáctenos a través de nuestro formulario.">
     <!-- Fivicon -->
     <link rel="shortcut icon" href="../img/logo.png">
     <!-- css Bootstrap CDN -->
@@ -69,14 +70,12 @@
         <!-- fin header -->
 
         <!-- Inicio del Main -->
-        <main>
+        <main class="main">
             <h1 class="titulo">¿Cómo podemos ayudar?</h1>
-            <p class="primeraSeccion">¡Escribanos! y háganos saber sus preguntas, ideas o reclamos a través del
-                siguiente
-                formulario. Nuestro
-                equipo de soporte se comunicará con usted lo antes posible.</p>
+            <p class="primeraSeccion">¡Escribanos! Si necesita realizar algún pedido, hacer preguntas contáctenos a
+                través del siguiente formulario.</p>
             <div class="content">
-                <form class="form button" action="#" method="get">
+                <form class="formulario" action="#" method="get">
                     <label class="label" for="nombre">Nombre:</label>
                     <input class="input" type="text" name="nombre" required>
                     <label class="label" for="email">Correo electrónico:</label>
@@ -85,21 +84,18 @@
                     <textarea class="textarea" name="mensaje" id=""></textarea>
                     <span class="label">Acepta términos y condiciones</span>
                     <input type="checkbox" name="acepta" value="si" required />
-                    <input class="boton colorButton" type="submit" value="Enviar">
-                    <input class="boton colorButton" type="reset" value="Cancelar">
+                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" type="reset" value="Cancelar">
                 </form>
-            </div>
 
-            <div class="seccionGlobal">
-                <section class="seccionContacto">
+                <section class="primeraSeccion">
                     <h2>Contáctenos</h2>
-                    <h3>Atención al cliente:</h3>
                     <p>Santiago 1203, Región Metropolitana</p>
                     <p>+56 9 23347658</p>
                     <p>contacto@pasteleria.com</p>
                     <p>www.pasteleriazorce.com</p>
                 </section>
-                <section class="seccionContacto">
+                <section class="primeraSeccion">
                     <h3>Horario de Atención al cliente:</h3>
                     <p>Lunes - Viernes, 8:30h - 18:30h</p>
                     <p>Sabados 8:30h -14:30h</p>
@@ -107,7 +103,6 @@
             </div>
         </main>
         <!-- Fin del Main -->
-
 
         <!-- Inicio del Footer -->
         <footer class="footer">
@@ -129,7 +124,7 @@
         <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="wapp"
             target="_blank"><img src="../img/whatsapp.png" alt="logoWapp" /></a>
         <!--fin contacto de whatsapp-->
-  
+
     </div>
     <!-- Fin Grid-Propio -->
 
@@ -137,7 +132,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-        <!-- Fin Librería JS -->
+    <!-- Fin Librería JS -->
 </body>
 
 </html>

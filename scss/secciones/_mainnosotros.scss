@@ -3,14 +3,12 @@
 .main{
     grid-area: main;
 
-        
     /* Estilo título Principal */
     .titulo{
         @extend %estiloTitulo;
     }
     
     /*Estilo Imagenes y Texto */
-
     .imgTex  {
         display: flex;
         flex-direction: row;
@@ -20,47 +18,30 @@
         margin-top: 50px;
         
         .estiloImg {
-
-            
             width: 475px;
             height: 315px;
             margin: 25px;
             padding: 20px;
-            /*position:relative;
-            justify-content:left;
-            top: 10px;*/
-            }
+        }
         
         .estiloTexto {
-        
-                padding:20px;
-                margin: 25px;
-                    
-                    width: 550px;
-                    height: 315px;
-                    
-                    text-align:justify;
-                    color: darkgray;
-                    font-style: italic;   
-                    
-                    line-height: 1.5;
-                    font-size: 20px;
-
-            }
-                
+            padding:20px;
+            margin: 25px;
+            width: 550px;
+            height: 315px;
+            text-align:justify;
+            color: darkgray;
+            font-style: italic;   
+            line-height: 1.5;
+            font-size: 20px;
         }
                 
-            
+    }
         
-        
-        }
-    
-    
-       
+}
+      
     /* Media Querys */
 /* Estrategia Mobile Last */
-
-
 
 
 @media(max-width: 435px) {
@@ -75,8 +56,8 @@
         margin-bottom: 50px;
         margin-top: 50px;
             .estiloImg {
-                width: 120px;
-                height: 100px;
+                width: 290px;
+                height: 280px;
                 margin: 5px;
                 
             }
@@ -102,8 +83,8 @@
         margin-bottom: 50px;
         margin-top: 50px;
             .estiloImg {
-                width: 80px;
-                height: 70px;
+                width: 270px;
+                height: 260px;
                 margin: 5px;
                 
             }

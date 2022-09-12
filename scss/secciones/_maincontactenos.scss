@@ -1,0 +1,202 @@
+/*Estilos Main Contáctenos*/
+
+.main{
+    grid-area: main;
+
+    /*Estilo Título*/
+    .titulo {
+        @extend %estiloTitulo;
+    }
+    
+    /* Estilo Primera Sección*/
+    .primeraSeccion {
+        @include estiloFuente;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+        
+    /* Estilo Formulario */
+        .formulario {
+            padding: 30px;
+            width: 400px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: darkgray;
+            text-align: left;
+            font-style: normal;
+            font-weight: lighter;
+            line-height: 2;
+
+            .label {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .input {
+                border: 0.5px darkgray solid;
+                width: 300px;
+                height: 30px;
+                padding: 8px;
+            }
+        
+            .textarea {
+                border-color: darkgray;
+                width: 300px;
+                height: 150px;
+                padding: 8px;
+            }
+        
+            .boton{                       
+                @extend %estiloBoton;
+    
+            }
+        }
+
+        /*Estilo Información de Contacto*/
+        .primeraSeccion {
+            @include estiloFuente;
+        }
+
+        .primeraSeccion {
+            @include estiloFuente;
+        }
+
+        
+    }
+
+
+}
+
+      
+    /* Media Querys */
+/* Estrategia Mobile Last */
+
+
+
+
+@media(max-width: 1024px) {
+    .main{
+        .content{
+            .formulario {
+                    padding: 30px;
+                    width: 350px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    color: darkgray;
+                    text-align: left;
+                    font-style: normal;
+                    font-weight: lighter;
+                    line-height: 2;
+        
+                    .label {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                
+                    .input {
+                        border: 0.5px darkgray solid;
+                        width: 280px;
+                        height: 30px;
+                        padding: 8px;
+                    }
+                
+                    .textarea {
+                        border-color: darkgray;
+                        width: 280px;
+                        height: 150px;
+                        padding: 8px;
+                    }
+                
+                }
+        
+                /*Estilo Información de Contacto*/
+                .primeraSeccion {
+                    font-size:14px
+                }
+        
+                .primeraSeccion {
+                    font-size: 14px;
+                }
+        
+                
+            }       
+        }
+
+}
+@media(max-width: 380px) {
+    .main{
+        div {
+        .imgTex{
+            display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-top: 50px;
+            .estiloImg {
+                width: 270px;
+                height: 260px;
+                margin: 5px;
+                
+            }
+        .estiloTexto {
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+
+}
+}
+}
+}
+
+@media(max-width: 320px) {
+    .main{
+        .content{
+            .formulario {
+                padding: 30px;
+                width: 300px;
+                border-radius: 5px;
+                font-size: 16px;
+                color: darkgray;
+                text-align: left;
+                font-style: normal;
+                font-weight: lighter;
+                line-height: 2;
+    
+                .label {
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+                .input {
+                    border: 0.5px darkgray solid;
+                    width: 250px;
+                    height: 30px;
+                    padding: 8px;
+                }
+            
+                .textarea {
+                    border-color: darkgray;
+                    width: 250px;
+                    height: 130px;
+                    padding: 8px;
+                }
+            
+                
+            }
+
+        }
+        
+
+}
+}
+
+
+
+
