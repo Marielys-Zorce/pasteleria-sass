@@ -1,9 +1,9 @@
 /*Extend*/
 
 %estiloTitulo{
-    margin-bottom: 5px;
-    height: 100px;
-    padding: 25px;
+    margin-bottom: 25px;
+    height: 120px;
+    padding: 35px;
     color: darkgray;
     border-bottom: 2px  rgb(237, 174, 201) solid;
     text-align: center;
@@ -20,8 +20,9 @@
     border-radius: 5px;
     width: 100px;
     height: 45px;
-    padding: 4px;
+    padding: 7px;
     margin-top: 5px;
+    
     &:hover{
         background-color: rgb(237, 174, 201);
     }

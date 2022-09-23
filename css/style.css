@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*Extend*/
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&family=Taviraj:wght@400;500;700&display=swap");
-.main .titulo {
-  margin-bottom: 5px;
-  height: 100px;
-  padding: 25px;
+.main section .titulo, .main .titulo {
+  margin-bottom: 25px;
+  height: 120px;
+  padding: 35px;
   color: darkgray;
   border-bottom: 2px #edaec9 solid;
   text-align: center;
@@ -13,16 +13,16 @@
   /* gradientes */
   background-image: radial-gradient(white 65%, darkgray); }
 
-.main .terceraSeccion .boton, .main .content .formulario .boton {
+.main .terceraSeccion .boton, .main .boton, .main .content .formulario .boton {
   background-color: #e2d4da;
   color: dimgray;
   border: 0.5px darkgray solid;
   border-radius: 5px;
   width: 100px;
   height: 45px;
-  padding: 4px;
+  padding: 7px;
   margin-top: 5px; }
-  .main .terceraSeccion .boton:hover, .main .content .formulario .boton:hover {
+  .main .boton:hover, .main .content .formulario .boton:hover {
     background-color: #edaec9; }
 
 /*Mixins*/
@@ -65,8 +65,8 @@
   .header .colorNav {
     background-color: white; }
   .header .logo {
-    width: 50px;
-    height: 60px; }
+    width: 90px;
+    height: 70px; }
   .header .letraGrande {
     margin-left: 1.5rem;
     font-size: 20px; }
@@ -80,33 +80,53 @@
 .main {
   grid-area: main;
   /* Estilo Banner */
-  /* Estilo título Principal */
-  /* Estilo Imagenes */
   /* Estilo Primera Sección */
   /* Estilo Segunda Sección */
   /* Estilo Tercera Sección */
   /* Estilo Enlaces */ }
-  .main .banner {
-    width: 100%;
-    height: 400px; }
-  .main .imgDestacadas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 60px; }
-    .main .imgDestacadas img {
-      width: 280px;
-      height: 280px;
-      border-radius: 8px;
-      margin: 15px;
-      margin-bottom: 70px;
-      margin-top: 50px;
-      border: 2px #edaec9 solid;
-      /* tranformaciones animaciones */ }
-      .main .imgDestacadas img:hover {
-        transform: translate(5px, 5px);
-        transition: .3s; }
+  .main .banner img {
+    width: 100%; }
+  .main section {
+    /* Estilo título Principal */
+    /* Estilo Imagenes */ }
+    .main section .centrar {
+      justify-content: space-between; }
+      .main section .centrar .imgIndex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        margin-top: 30px; }
+        .main section .centrar .imgIndex img {
+          border-radius: 8px;
+          margin-right: 20px;
+          margin-left: 2px;
+          margin-bottom: 10px;
+          margin-top: 20px;
+          border: 2px #edaec9 solid;
+          /* tranformaciones animaciones */ }
+          .main section .centrar .imgIndex img:hover {
+            transform: translate(5px, 5px);
+            transition: .3s; }
+        .main section .centrar .imgIndex .subTitulo {
+          margin-bottom: 10px;
+          font-weight: 200;
+          line-height: 1.2;
+          font-family: 'Taviraj', serif;
+          font-size: 2rem;
+          font-style: italic;
+          text-align: center;
+          color: darkgray; }
+        .main section .centrar .imgIndex .textoJustificado {
+          padding: 10px;
+          text-align: justify;
+          color: darkgray;
+          font-style: normal;
+          bottom: 20px;
+          top: 10px;
+          line-height: 1.5;
+          font-size: 20px; }
   .main .primeraSeccion {
     background-color: white;
     line-height: 1.5;
@@ -115,13 +135,15 @@
     font-size: 18px;
     text-align: center;
     color: darkgray;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 90px;
+    margin-bottom: 70px;
     margin-left: 20px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    background-color: #f7e5f1; }
   .main .subTitulo {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0.5rem;
+    padding: 10px;
     font-weight: 500;
     line-height: 1.2;
     font-family: 'Taviraj', serif;
@@ -139,6 +161,7 @@
     line-height: 2;
     text-align: center;
     color: darkgray;
+    font-size: 18px;
     font-weight: normal;
     font-style: italic; }
     .main .segundaSeccion .enLinea {
@@ -148,17 +171,19 @@
       margin: 20px 0px;
       padding: 10px; }
   .main .terceraSeccion {
-    background-color: white;
+    background-color: #f7e5f1;
     line-height: 2;
     font-style: italic;
     font-weight: normal;
     text-align: center;
     color: darkgray;
-    margin: 40px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 100px;
     font-size: 18px; }
     .main .terceraSeccion .input {
       border: 0.5px darkgray solid;
-      width: 250px;
+      width: 270px;
       height: 45px;
       padding: 8px; }
   .main .enlaces {
@@ -174,30 +199,38 @@
 /*Estilos Main Sobre Nosotros*/
 .main {
   grid-area: main;
-  /* Estilo título Principal */
-  /*Estilo Imagenes y Texto */ }
-  .main .imgTex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    margin-top: 50px; }
-    .main .imgTex .estiloImg {
-      width: 475px;
-      height: 315px;
-      margin: 25px;
-      padding: 20px; }
-    .main .imgTex .estiloTexto {
-      padding: 20px;
-      margin: 25px;
-      width: 550px;
-      height: 315px;
-      text-align: justify;
-      color: darkgray;
-      font-style: italic;
-      line-height: 1.5;
-      font-size: 20px; }
+  /* Estilo título Principal */ }
+  .main div {
+    /*Estilo Imagenes y Texto */ }
+    .main div .imgTex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      margin-top: 50px; }
+      .main div .imgTex .estiloImg {
+        border-radius: 40px;
+        margin: 20px;
+        padding: 20px; }
+      .main div .imgTex .estiloTexto {
+        padding: 20px;
+        margin: 25px;
+        padding-top: 40px;
+        width: 550px;
+        height: 315px;
+        text-align: justify;
+        color: darkgray;
+        font-style: italic;
+        line-height: 1.5;
+        font-size: 20px; }
+  .main .container .iframeVideo {
+    width: 1000px;
+    height: 500px;
+    margin: 40px;
+    position: relative;
+    left: 10px;
+    justify-content: center; }
 
 /* Media Querys */
 /* Estrategia Mobile Last */
@@ -239,15 +272,20 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    margin-top: 50px; }
+    margin-bottom: 10px;
+    margin-top: 10px; }
     .main div .imgTex .estiloImg {
       width: 250px;
-      height: 240px;
-      margin: 5px; }
+      height: 240px; }
     .main div .imgTex .estiloTexto {
       font-size: 15px;
-      margin-bottom: 25px; } }
+      margin-top: 5px;
+      height: 340px; }
+  .footer .textoChico p {
+    font-size: 12px;
+    color: black;
+    position: relative;
+    margin-left: 10px; } }
 
 .main {
   grid-area: main;
@@ -258,19 +296,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 60px; }
+    margin-bottom: 20px; }
     .main .imgDestacadas img {
       width: 280px;
-      height: 280px;
+      height: 260px;
       border-radius: 8px;
-      margin: 15px;
-      margin-bottom: 70px;
+      margin: 20px;
+      margin-bottom: 20px;
       margin-top: 50px;
       border: 2px #edaec9 solid;
+      box-shadow: 0px 10px 10px #b6b0b0;
       /* tranformaciones animaciones */ }
       .main .imgDestacadas img:hover {
-        transform: translate(5px, 5px);
+        filter: opacity(80%);
         transition: .3s; }
+  .main .textoCentrado {
+    padding-top: 5px;
+    width: 315px;
+    text-align: center;
+    color: #797575;
+    font-style: italic;
+    bottom: 20px;
+    top: 20px;
+    line-height: 1.5;
+    font-size: 20px; }
 
 /*Estilos Main Nuestros Locales*/
 .main {
@@ -285,21 +334,35 @@
     text-align: left;
     font-style: italic;
     font-weight: normal; }
-  .main div .estiloImg {
-    width: 475px;
-    height: 315px;
-    margin: 25px;
-    padding: 20px; }
-  .main div .estiloTexto {
-    padding: 20px;
-    margin: 25px;
-    width: 550px;
-    height: 315px;
-    text-align: justify;
-    color: darkgray;
-    font-style: italic;
-    line-height: 1.5;
-    font-size: 20px; }
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 50px; }
+    .main .imgTex .estiloImg {
+      border-radius: 20px;
+      border-color: aqua;
+      margin: 25px;
+      padding: 20px; }
+    .main .imgTex .estiloTexto {
+      padding: 50px;
+      margin: 25px;
+      width: 500px;
+      height: 315px;
+      text-align: justify;
+      color: darkgray;
+      font-style: italic;
+      line-height: 1.5;
+      font-size: 20px; }
+    .main .imgTex .iframeMapas {
+      margin: 90px;
+      border-radius: 8px;
+      justify-content: center;
+      height: 400px;
+      padding-left: 20px;
+      padding-right: 20px; }
 
 /* Media Querys */
 /* Estrategia Mobile Last */
@@ -353,8 +416,8 @@
     font-size: 18px;
     text-align: center;
     color: darkgray;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 90px;
+    margin-bottom: 70px;
     margin-left: 20px;
     margin-right: 20px; }
   .main .content {
@@ -396,8 +459,8 @@
       font-size: 18px;
       text-align: center;
       color: darkgray;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 90px;
+      margin-bottom: 70px;
       margin-left: 20px;
       margin-right: 20px; }
     .main .content .primeraSeccion {
@@ -408,8 +471,8 @@
       font-size: 18px;
       text-align: center;
       color: darkgray;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 90px;
+      margin-bottom: 70px;
       margin-left: 20px;
       margin-right: 20px; }
 
@@ -495,14 +558,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 170px;
+  height: 130px;
   /* gradientes */
   background-image: linear-gradient(to top, #edaec9, #e2d4da); }
+  .footer .imgPago {
+    width: 160px;
+    height: 50px; }
   .footer .textoChico {
     font-size: 15px;
     color: black;
     position: relative;
-    top: 60px; }
+    top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px; }
   .footer .imgRedes {
     display: flex;
     flex-direction: row;
