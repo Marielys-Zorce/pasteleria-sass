@@ -18,9 +18,7 @@
             margin-bottom: 10px;
             margin-top: 50px;
         
-            .estiloImg {
-            
-                
+            .estiloImg {           
                 border-radius: 40px;
                 margin: 20px;
                 padding: 20px;
@@ -43,33 +41,28 @@
 
     }
     
-    .container {
+    .card{
         .iframeVideo {
+            padding: 20px;
+            height: 70vh;
+            position:relative;
+            right: 5px;
+        }
         
-            width: 1000px;
-            height: 500px;
-            margin: 40px;
-            position: relative;
-            left: 10px;
-            justify-content: center;
-            
-            
     }
     
 
         
-        
-        
-    }
+}
     
         
-}
+
       
     /* Media Querys */
 /* Estrategia Mobile Last */
 
 
-@media(max-width: 435px) {
+@media(max-width: 650px) {
     .main{
         h1{
         div {
@@ -81,14 +74,74 @@
         margin-bottom: 50px;
         margin-top: 50px;
             .estiloImg {
-                width: 290px;
-                height: 280px;
+                width: 200px;
+                height: 180px;
                 margin: 5px;
                 
             }
         .estiloTexto {
             font-size: 15px;
             margin-bottom: 25px;
+        }
+
+
+}
+}
+}
+}
+}
+
+@media(max-width: 440px) {
+    .main{
+        h1{
+        div {
+        .imgTex{
+            display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-top: 50px;
+            .estiloImg {
+                width: 200px;
+                height: 200px;
+                margin: 5px;
+                
+            }
+        .estiloTexto {
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+
+}
+}
+}
+}
+}
+
+
+
+@media(max-width: 435px) {
+    .main{
+        h1{
+        div {
+        .imgTex{
+            display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        margin-top: 20px;
+            .estiloImg {
+                width: 200px;
+                height: 200px;
+                margin: 5px;
+                
+            }
+        .estiloTexto {
+            font-size: 10px;
+            margin-bottom: 10px;
         }
 
 
