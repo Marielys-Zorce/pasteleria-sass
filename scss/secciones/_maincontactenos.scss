@@ -18,19 +18,20 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 20px;
+        margin: 12px;
         
     /* Estilo Formulario */
         .formulario {
-            padding: 30px;
-            width: 400px;
+            padding: 15px;
+            width: 340px;
             border-radius: 5px;
-            font-size: 18px;
-            color: darkgray;
+            font-size: 16px;
+            color: rgb(150, 142, 142);
             text-align: left;
             font-style: normal;
             font-weight: lighter;
             line-height: 2;
+            box-shadow: 0px 0px 10px 0px rgb(150, 142, 142);
 
             .label {
                 display: flex;
@@ -58,19 +59,26 @@
         }
 
         /*Estilo Información de Contacto*/
-        .primeraSeccion {
-            @include estiloFuente;
+        .contacto {
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            
         }
-
+   
         .primeraSeccion {
             @include estiloFuente;
         }
 
         
+    
     }
 
-
 }
+
 
       
     /* Media Querys */

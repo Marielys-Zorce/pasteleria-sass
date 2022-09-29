@@ -1,135 +1,286 @@
 /*Estilos Main Nuestros Locales*/
 
-.main{
+.main {
     grid-area: main;
-        
+
     /* Estilo título Principal */
-    .titulo{
+    .titulo {
         @extend %estiloTitulo;
     }
-    
+
     /*Estilo Imagenes y Texto */
-    .tituloDos  {
+    .subTitulo {
         margin-top: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         padding: 5px;
         color: darkgray;
-        text-align:left;
+        text-align: center;
         font-style: italic;
         font-weight: normal
     }
+
     .imgTex {
         display: flex;
         flex-direction: row;
-        justify-content:space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-bottom: 10px;
         margin-top: 50px;
+
         .estiloImg {
-            border-radius: 20px;
-            border-color: aqua;
-            margin: 25px;
-            padding: 20px;
+            border-radius: 30px;
+            margin: 15px;
+            padding: 10px;
+            width: 500px;
+            height: 300px;
         }
-    
+
         .estiloTexto {
-            padding:50px;
-            margin: 25px;
+            padding: 50px;
+            margin: 15px;
             width: 500px;
             height: 315px;
-            text-align:justify;
+            text-align: justify;
             color: darkgray;
-            font-style: italic;   
+            font-style: italic;
             line-height: 1.5;
             font-size: 20px;
         }
-        .iframeMapas  {
-            
+
+        .iframeMapas {
             margin: 90px;
-          border-radius: 8px;
-            justify-content:center;
-            height: 400px;
+            border-radius: 8px;
+            justify-content: center;
+            height: 300px;
+            height: 280px;
             padding-left: 20px;
             padding-right: 20px;
-            
         }
-    }     
+    }
 }
 
 /* Media Querys */
 /* Estrategia Mobile Last */
-
-
-
-
-@media(max-width: 435px) {
-    .main{
+@media(max-width: 580px) {
+    .main {
+        .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 10px;
+                .estiloImg {
+                    width: 380;
+                    height: 360;
+                    margin: 5px;
+                }
+                .estiloTexto {
+                    font-size: 20px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    line-height: 1,5px;
+                }
+        }
+    }
+}
+   
+@media(max-width: 550px) {
+        .main {
+            .imgTex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                    .estiloImg {
+                        width: 380;
+                        height: 260;
+                        margin: 5px;
+                    }
+                    .estiloTexto {
+                        font-size: 20px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        line-height: 1,5px;
+                    }
+            }
+        }
+ }
     
-        div {
+@media(max-width: 530px) {
+    .main {            
+        .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 10px;
+                .estiloImg {
+                    width: 360;
+                    height: 340;
+                    margin: 5px;
+                }
+                .estiloTexto {
+                    font-size: 20px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    line-height: 1,5px;
+                }
+        }
+    }
+}
+        
+@media(max-width: 494px) {
+    .main {
+        .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 10px;
+                .estiloImg {
+                    width: 360;
+                    height: 340;
+                    margin: 5px;
+                }
+                .estiloTexto {
+                    font-size: 20px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    line-height: 1,5px;
+                }
+        }
+    }
+}
+@media(max-width: 490px) {
+    .main {
+         .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 20px;
+                .estiloImg {
+                    width: 360px;
+                    height: 340px;
+                    margin: 5px;
+                }
+        }
+    }
+}
        
-            .estiloImg {
-                width: 290px;
-                height: 280px;
-                margin: 5px;
-                
-            }
-        .estiloTexto {
-            font-size: 15px;
-            margin-bottom: 25px;
-            text-align: center;
-                width: 290px;
-                height: 280px;
-            }
+@media(max-width: 434px) {
+    .main {
+         .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 20px;
+                .estiloImg {
+                    width: 320px;
+                    height: 300px ;
+                    margin: 5px;
+                }
         }
-
-
+    }
 }
+       
+@media(max-width: 432px) {
+    .main {
+         .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 20px;
+                .estiloImg {
+                    width: 320px;
+                    height: 300px ;
+                    margin: 5px;
+                }
+        }
+    }
 }
-
+       
 @media(max-width: 380px) {
-    .main{
-        div {
-
-            .estiloImg {
-                width: 270px;
-                height: 260px;
-                margin: 5px;
-                
-            }
-        .estiloTexto {
-            font-size: 15px;
-            margin-bottom: 25px;
-            text-align: center;
-                width: 270px;
-                height: 260px;
-            }
+    .main {
+        .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 50px;
+                .estiloImg {
+                    width: 300px;
+                    height: 280px;
+                    margin: 5px;
+                }
+                .estiloTexto {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    margin-top: 5px;
+                    height: 100px;
+                    padding: 10px;
+                }
         }
-
-
+    }
 }
-}
-
 
 
 @media(max-width: 320px) {
-    .main{
-        div {
-            .estiloImg {
-                width: 280px;
-                height: 270px;
-                margin: 5px;
-                align-content: center;
+    .main {
+        .imgTex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                .estiloImg {
+                    width: 280px;
+                    height: 260px;
+                }
+                .estiloTexto {
+                                        
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    font-size: 16px;
+                    margin-top: 5px;
+                    width: 280px;
+                    height: 150px;
+                    padding: 20px;
+                }
+        }
+        .iframeMapas {
+            margin: 80px;
+            border-radius: 8px;
+            justify-content: center;
+            height: 280px;
+            height: 280px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .footer {
+        .textoChico {
+            p {
+                font-size: 12px;
+                color: black;
+                position: relative;
+                margin-left: 10px;
+
+            }
+        }
+    }
+}
+
+
+
+
+
                 
-            }
-            .estiloTexto {
-                font-size: 15px;
-                margin-bottom: 25px;
-                text-align: center;
-                width: 280px;
-                height: 270px;
-            }
 
 
-}
-}
-}
+            
+        
+    

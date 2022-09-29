@@ -19,9 +19,9 @@
   border: 0.5px darkgray solid;
   border-radius: 5px;
   width: 105px;
-  height: 45px;
-  padding: 7px;
-  margin-top: 5px; }
+  height: 35px;
+  padding: 3px;
+  margin-bottom: 7px; }
   .main .boton:hover, .main .content .formulario .boton:hover {
     background-color: #edaec9; }
 
@@ -100,7 +100,7 @@
         margin-top: 30px; }
         .main section .centrar .imgIndex img {
           border-radius: 8px;
-          margin-right: 20px;
+          margin-right: 10px;
           margin-left: 2px;
           margin-bottom: 10px;
           margin-top: 20px;
@@ -111,6 +111,7 @@
             transition: .3s; }
         .main section .centrar .imgIndex .subTitulo {
           margin-bottom: 5px;
+          margin-top: 25px;
           font-weight: 200;
           line-height: 1.2;
           font-family: 'Taviraj', serif;
@@ -135,8 +136,8 @@
     font-size: 18px;
     text-align: center;
     color: darkgray;
-    margin-top: 90px;
-    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 80px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #f7e5f1; }
@@ -196,25 +197,50 @@
       font-size: 20px;
       font-weight: bold; }
 
+/* Media Querys */
+/* Estrategia Mobile Last */
+@media (max-width: 320px) {
+  .main section .centrar .imgIndex .subTitulo {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 200;
+    line-height: 1.2;
+    font-family: 'Taviraj', serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    color: darkgray; }
+  .main section .centrar .imgIndex .textoJustificado {
+    padding: 15px;
+    text-align: justify;
+    color: darkgray;
+    font-style: oblique;
+    bottom: 5px;
+    top: 5px;
+    line-height: 1.5;
+    font-size: 16px; } }
+
 /*Estilos Main Sobre Nosotros*/
 .main {
   grid-area: main;
   /* Estilo título Principal */ }
-  .main div {
+  .main .principal {
     /*Estilo Imagenes y Texto */ }
-    .main div .imgTex {
+    .main .principal .imgTex {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      margin-bottom: 10px;
+      margin-bottom: 12vh;
       margin-top: 50px; }
-      .main div .imgTex .estiloImg {
+      .main .principal .imgTex .estiloImg {
         border-radius: 40px;
         margin: 20px;
-        padding: 20px; }
-      .main div .imgTex .estiloTexto {
         padding: 20px;
+        width: 500px;
+        height: 400px; }
+      .main .principal .imgTex .estiloTexto {
+        padding-right: 20px;
         margin: 25px;
         padding-top: 40px;
         width: 550px;
@@ -223,94 +249,103 @@
         color: darkgray;
         font-style: italic;
         line-height: 1.5;
-        font-size: 20px; }
-  .main .card .iframeVideo {
-    padding: 20px;
-    height: 70vh;
-    position: relative;
-    right: 5px; }
+        font-size: 18px; }
+
+.card .iframeVideo {
+  padding: 20px;
+  height: 70vh;
+  position: relative;
+  right: 5px; }
 
 /* Media Querys */
 /* Estrategia Mobile Last */
-@media (max-width: 650px) {
-  .main h1 div .imgTex {
+@media (max-width: 735px) {
+  .main .principal .imgTex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 50px;
     margin-top: 50px; }
-    .main h1 div .imgTex .estiloImg {
-      width: 200px;
-      height: 180px;
-      margin: 5px; }
-    .main h1 div .imgTex .estiloTexto {
-      font-size: 15px;
-      margin-bottom: 25px; } }
+    .main .principal .imgTex .estiloImg {
+      width: 450px;
+      height: 430px;
+      margin: 5px; } }
 
-@media (max-width: 440px) {
-  .main h1 div .imgTex {
+@media (max-width: 650px) {
+  .main .principal .imgTex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 50px;
     margin-top: 50px; }
-    .main h1 div .imgTex .estiloImg {
-      width: 200px;
-      height: 200px;
+    .main .principal .imgTex .estiloImg {
+      width: 430px;
+      height: 410px;
       margin: 5px; }
-    .main h1 div .imgTex .estiloTexto {
-      font-size: 15px;
+    .main .principal .imgTex .estiloTexto {
+      font-size: 18px;
+      margin-top: 5px;
+      padding: 25px; } }
+
+@media (max-width: 482px) {
+  .main .principal .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    .main .principal .imgTex .estiloImg {
+      width: 410px;
+      height: 390px;
+      margin: 5px; }
+    .main .principal .imgTex .estiloTexto {
+      font-size: 16px;
       margin-bottom: 25px; } }
 
 @media (max-width: 435px) {
-  .main h1 div .imgTex {
+  .main .principal .imgTex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 20px;
     margin-top: 20px; }
-    .main h1 div .imgTex .estiloImg {
-      width: 200px;
-      height: 200px;
-      margin: 5px; }
-    .main h1 div .imgTex .estiloTexto {
-      font-size: 10px;
-      margin-bottom: 10px; } }
+    .main .principal .imgTex .estiloImg {
+      width: 390px;
+      height: 370px;
+      margin: 5px; } }
 
 @media (max-width: 380px) {
-  .main div .imgTex {
+  .main .principal .imgTex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 50px;
     margin-top: 50px; }
-    .main div .imgTex .estiloImg {
-      width: 270px;
-      height: 260px;
+    .main .principal .imgTex .estiloImg {
+      width: 330px;
+      height: 310px;
       margin: 5px; }
-    .main div .imgTex .estiloTexto {
-      font-size: 15px;
-      margin-bottom: 25px; } }
+    .main .principal .imgTex .estiloTexto {
+      font-size: 14px;
+      margin-bottom: 180px;
+      margin-top: 5px;
+      height: 100px;
+      padding: 25px; } }
 
 @media (max-width: 320px) {
-  .main div .imgTex {
+  .main .principal .imgTex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 10px;
-    margin-top: 10px; }
-    .main div .imgTex .estiloImg {
-      width: 250px;
-      height: 240px; }
-    .main div .imgTex .estiloTexto {
-      font-size: 15px;
-      margin-top: 5px;
-      height: 340px; }
+    margin-top: 20px; }
+    .main .principal .imgTex .estiloImg {
+      width: 100%; }
+    .main .principal .imgTex .estiloTexto {
+      font-size: 14px;
+      margin-bottom: 170px;
+      height: 100px;
+      padding: 25px; }
   .footer .textoChico p {
     font-size: 12px;
     color: black;
@@ -356,29 +391,30 @@
   grid-area: main;
   /* Estilo título Principal */
   /*Estilo Imagenes y Texto */ }
-  .main .tituloDos {
+  .main .subTitulo {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     padding: 5px;
     color: darkgray;
-    text-align: left;
+    text-align: center;
     font-style: italic;
     font-weight: normal; }
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 10px;
     margin-top: 50px; }
     .main .imgTex .estiloImg {
-      border-radius: 20px;
-      border-color: aqua;
-      margin: 25px;
-      padding: 20px; }
+      border-radius: 30px;
+      margin: 15px;
+      padding: 10px;
+      width: 500px;
+      height: 300px; }
     .main .imgTex .estiloTexto {
       padding: 50px;
-      margin: 25px;
+      margin: 15px;
       width: 500px;
       height: 315px;
       text-align: justify;
@@ -390,48 +426,166 @@
       margin: 90px;
       border-radius: 8px;
       justify-content: center;
-      height: 400px;
+      height: 300px;
+      height: 280px;
       padding-left: 20px;
       padding-right: 20px; }
 
 /* Media Querys */
 /* Estrategia Mobile Last */
-@media (max-width: 435px) {
-  .main div .estiloImg {
-    width: 290px;
-    height: 280px;
-    margin: 5px; }
-  .main div .estiloTexto {
-    font-size: 15px;
-    margin-bottom: 25px;
-    text-align: center;
-    width: 290px;
-    height: 280px; } }
+@media (max-width: 580px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px; }
+    .main .imgTex .estiloImg {
+      width: 380;
+      height: 360;
+      margin: 5px; }
+    .main .imgTex .estiloTexto {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: 1,5px; } }
+
+@media (max-width: 550px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px; }
+    .main .imgTex .estiloImg {
+      width: 380;
+      height: 260;
+      margin: 5px; }
+    .main .imgTex .estiloTexto {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: 1,5px; } }
+
+@media (max-width: 530px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px; }
+    .main .imgTex .estiloImg {
+      width: 360;
+      height: 340;
+      margin: 5px; }
+    .main .imgTex .estiloTexto {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: 1,5px; } }
+
+@media (max-width: 494px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px; }
+    .main .imgTex .estiloImg {
+      width: 360;
+      height: 340;
+      margin: 5px; }
+    .main .imgTex .estiloTexto {
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      line-height: 1,5px; } }
+
+@media (max-width: 490px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .main .imgTex .estiloImg {
+      width: 360px;
+      height: 340px;
+      margin: 5px; } }
+
+@media (max-width: 434px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .main .imgTex .estiloImg {
+      width: 320px;
+      height: 300px;
+      margin: 5px; } }
+
+@media (max-width: 432px) {
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .main .imgTex .estiloImg {
+      width: 320px;
+      height: 300px;
+      margin: 5px; } }
 
 @media (max-width: 380px) {
-  .main div .estiloImg {
-    width: 270px;
-    height: 260px;
-    margin: 5px; }
-  .main div .estiloTexto {
-    font-size: 15px;
-    margin-bottom: 25px;
-    text-align: center;
-    width: 270px;
-    height: 260px; } }
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    .main .imgTex .estiloImg {
+      width: 300px;
+      height: 280px;
+      margin: 5px; }
+    .main .imgTex .estiloTexto {
+      font-size: 16px;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      height: 100px;
+      padding: 10px; } }
 
 @media (max-width: 320px) {
-  .main div .estiloImg {
-    width: 280px;
-    height: 270px;
-    margin: 5px;
-    align-content: center; }
-  .main div .estiloTexto {
-    font-size: 15px;
-    margin-bottom: 25px;
-    text-align: center;
-    width: 280px;
-    height: 270px; } }
+  .main .imgTex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px; }
+    .main .imgTex .estiloImg {
+      width: 280px;
+      height: 260px; }
+    .main .imgTex .estiloTexto {
+      margin-right: 3px;
+      margin-left: 3px;
+      font-size: 16px;
+      margin-top: 5px;
+      width: 280px;
+      height: 150px;
+      padding: 20px; }
+  .main .iframeMapas {
+    margin: 80px;
+    border-radius: 8px;
+    justify-content: center;
+    height: 280px;
+    height: 280px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .footer .textoChico p {
+    font-size: 12px;
+    color: black;
+    position: relative;
+    margin-left: 10px; } }
 
 /*Estilos Main Contáctenos*/
 .main {
@@ -446,8 +600,8 @@
     font-size: 18px;
     text-align: center;
     color: darkgray;
-    margin-top: 90px;
-    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 80px;
     margin-left: 20px;
     margin-right: 20px; }
   .main .content {
@@ -455,19 +609,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 12px;
     /* Estilo Formulario */
     /*Estilo Información de Contacto*/ }
     .main .content .formulario {
-      padding: 30px;
-      width: 400px;
+      padding: 15px;
+      width: 340px;
       border-radius: 5px;
-      font-size: 18px;
-      color: darkgray;
+      font-size: 16px;
+      color: #968e8e;
       text-align: left;
       font-style: normal;
       font-weight: lighter;
-      line-height: 2; }
+      line-height: 2;
+      box-shadow: 0px 0px 10px 0px #968e8e; }
       .main .content .formulario .label {
         display: flex;
         flex-direction: column; }
@@ -481,6 +636,13 @@
         width: 300px;
         height: 150px;
         padding: 8px; }
+    .main .content .contacto {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      margin-top: 10px; }
     .main .content .primeraSeccion {
       background-color: white;
       line-height: 1.5;
@@ -489,20 +651,8 @@
       font-size: 18px;
       text-align: center;
       color: darkgray;
-      margin-top: 90px;
-      margin-bottom: 70px;
-      margin-left: 20px;
-      margin-right: 20px; }
-    .main .content .primeraSeccion {
-      background-color: white;
-      line-height: 1.5;
-      font-style: italic;
-      font-weight: normal;
-      font-size: 18px;
-      text-align: center;
-      color: darkgray;
-      margin-top: 90px;
-      margin-bottom: 70px;
+      margin-top: 70px;
+      margin-bottom: 80px;
       margin-left: 20px;
       margin-right: 20px; }
 
