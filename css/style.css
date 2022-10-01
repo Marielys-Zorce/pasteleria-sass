@@ -19,9 +19,11 @@
   border: 0.5px darkgray solid;
   border-radius: 5px;
   width: 105px;
-  height: 35px;
+  height: 40px;
   padding: 3px;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  margin-left: 15px;
+  margin-top: 5px; }
   .main .boton:hover, .main .content .formulario .boton:hover {
     background-color: #edaec9; }
 
@@ -112,7 +114,7 @@
         .main section .centrar .imgIndex .subTitulo {
           margin-bottom: 5px;
           margin-top: 25px;
-          font-weight: 200;
+          font-weight: 500;
           line-height: 1.2;
           font-family: 'Taviraj', serif;
           font-size: 2rem;
@@ -141,7 +143,7 @@
     margin-left: 20px;
     margin-right: 20px;
     background-color: #f7e5f1; }
-  .main .subTitulo {
+  .main .tituloGrande {
     margin-top: 10px;
     margin-bottom: 0.5rem;
     padding: 10px;
@@ -200,25 +202,32 @@
 /* Media Querys */
 /* Estrategia Mobile Last */
 @media (max-width: 320px) {
-  .main section .centrar .imgIndex .subTitulo {
-    margin-bottom: 5px;
-    margin-top: 15px;
-    font-weight: 200;
-    line-height: 1.2;
-    font-family: 'Taviraj', serif;
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
-    color: darkgray; }
-  .main section .centrar .imgIndex .textoJustificado {
-    padding: 15px;
-    text-align: justify;
-    color: darkgray;
-    font-style: oblique;
-    bottom: 5px;
-    top: 5px;
-    line-height: 1.5;
-    font-size: 16px; } }
+  .main {
+    /* Estilo Segunda Sección */ }
+    .main section .centrar .imgIndex .subTitulo {
+      margin-bottom: 5px;
+      margin-top: 5px;
+      font-weight: 200;
+      line-height: 1.2;
+      font-family: 'Taviraj', serif;
+      font-size: 25px;
+      font-style: italic;
+      text-align: center;
+      color: darkgray;
+      padding: 10px; }
+    .main section .centrar .imgIndex .textoJustificado {
+      padding: 15px;
+      text-align: justify;
+      color: darkgray;
+      font-style: oblique;
+      bottom: 5px;
+      top: 5px;
+      line-height: 1.5;
+      font-size: 16px; }
+    .main .tituloGrande {
+      font-weight: 500;
+      padding: 30px;
+      font-size: 25px; } }
 
 /*Estilos Main Sobre Nosotros*/
 .main {
@@ -343,7 +352,7 @@
       width: 100%; }
     .main .principal .imgTex .estiloTexto {
       font-size: 14px;
-      margin-bottom: 170px;
+      margin-bottom: 240px;
       height: 100px;
       padding: 25px; }
   .footer .textoChico p {
@@ -423,13 +432,12 @@
       line-height: 1.5;
       font-size: 20px; }
     .main .imgTex .iframeMapas {
-      margin: 90px;
+      margin: 70px;
       border-radius: 8px;
-      justify-content: center;
-      height: 300px;
-      height: 280px;
-      padding-left: 20px;
-      padding-right: 20px; }
+      width: 580px;
+      height: 320px;
+      padding-left: 10px;
+      padding-right: 10px; }
 
 /* Media Querys */
 /* Estrategia Mobile Last */
@@ -437,7 +445,7 @@
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px; }
     .main .imgTex .estiloImg {
@@ -448,13 +456,13 @@
       font-size: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
-      line-height: 1,5px; } }
+      line-height: 1, 5px; } }
 
 @media (max-width: 550px) {
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px; }
     .main .imgTex .estiloImg {
@@ -465,13 +473,13 @@
       font-size: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
-      line-height: 1,5px; } }
+      line-height: 1, 5px; } }
 
 @media (max-width: 530px) {
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px; }
     .main .imgTex .estiloImg {
@@ -482,13 +490,13 @@
       font-size: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
-      line-height: 1,5px; } }
+      line-height: 1, 5px; } }
 
 @media (max-width: 494px) {
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 10px; }
     .main .imgTex .estiloImg {
@@ -499,13 +507,13 @@
       font-size: 20px;
       margin-top: 5px;
       margin-bottom: 5px;
-      line-height: 1,5px; } }
+      line-height: 1, 5px; } }
 
 @media (max-width: 490px) {
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px; }
     .main .imgTex .estiloImg {
@@ -517,7 +525,7 @@
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px; }
     .main .imgTex .estiloImg {
@@ -529,7 +537,7 @@
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px; }
     .main .imgTex .estiloImg {
@@ -541,11 +549,11 @@
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px; }
     .main .imgTex .estiloImg {
-      width: 300px;
+      width: 280px;
       height: 280px;
       margin: 5px; }
     .main .imgTex .estiloTexto {
@@ -559,9 +567,8 @@
   .main .imgTex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 10px; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .main .imgTex .estiloImg {
       width: 280px;
       height: 260px; }
@@ -573,14 +580,6 @@
       width: 280px;
       height: 150px;
       padding: 20px; }
-  .main .iframeMapas {
-    margin: 80px;
-    border-radius: 8px;
-    justify-content: center;
-    height: 280px;
-    height: 280px;
-    padding-left: 20px;
-    padding-right: 20px; }
   .footer .textoChico p {
     font-size: 12px;
     color: black;
@@ -613,8 +612,9 @@
     /* Estilo Formulario */
     /*Estilo Información de Contacto*/ }
     .main .content .formulario {
-      padding: 15px;
-      width: 340px;
+      padding: 40px;
+      margin-left: 10px;
+      width: 400px;
       border-radius: 5px;
       font-size: 16px;
       color: #968e8e;
@@ -705,10 +705,10 @@
       font-size: 15px;
       margin-bottom: 25px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .main .content .formulario {
-    padding: 30px;
-    width: 300px;
+    padding: 10px;
+    width: 320px;
     border-radius: 5px;
     font-size: 16px;
     color: darkgray;
@@ -728,7 +728,38 @@
       border-color: darkgray;
       width: 250px;
       height: 130px;
-      padding: 8px; } }
+      padding: 8px; }
+    .main .content .formulario .boton {
+      width: 80px;
+      height: 40px; } }
+
+@media (max-width: 320px) {
+  .main .content .formulario {
+    padding: 10px;
+    width: 280px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: darkgray;
+    text-align: left;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 2; }
+    .main .content .formulario .label {
+      display: flex;
+      flex-direction: column; }
+    .main .content .formulario .input {
+      border: 0.5px darkgray solid;
+      width: 250px;
+      height: 30px;
+      padding: 8px; }
+    .main .content .formulario .textarea {
+      border-color: darkgray;
+      width: 250px;
+      height: 130px;
+      padding: 8px; }
+    .main .content .formulario .boton {
+      width: 80px;
+      height: 40px; } }
 
 /*Estilos Footer*/
 .footer {

@@ -49,7 +49,6 @@
 .card {
     .iframeVideo {
         padding: 20px;
-        
         height: 70vh;
         position: relative;
         right: 5px;
@@ -71,17 +70,15 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-
                 margin-top: 50px;
 
                 .estiloImg {
                     width: 450px;
                     height: 430px;
                     margin: 5px;
-
                 }
 
-               
+
 
 
             }
@@ -97,24 +94,18 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-
                 margin-top: 50px;
 
                 .estiloImg {
                     width: 430px;
                     height: 410px;
                     margin: 5px;
-
                 }
 
                 .estiloTexto {
                     font-size: 18px;
-                 
                     margin-top: 5px;
-                   
                     padding: 25px;
-                   
-                    
                 }
 
 
@@ -127,30 +118,27 @@
 @media(max-width: 482px) {
     .main {
         .principal {
-            
-                .imgTex {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
 
-                    margin-top: 50px;
+            .imgTex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 50px;
 
-                    .estiloImg {
-                        width: 410px;
-                        height: 390px;
-
-                        margin: 5px;
-
-                    }
-
-                    .estiloTexto {
-                        font-size: 16px;
-                        margin-bottom: 25px;
-                    }
-
-
+                .estiloImg {
+                    width: 410px;
+                    height: 390px;
+                    margin: 5px;
                 }
+
+                .estiloTexto {
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+
+
+            }
         }
     }
 }
@@ -159,30 +147,26 @@
 
 @media(max-width: 435px) {
     .main {
-        
-            .principal {
-                .imgTex {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
+        .principal {
+            .imgTex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                margin-top: 20px;
 
-                    margin-top: 20px;
-
-                    .estiloImg {
-                        width: 390px;
-                        height: 370px;
-
-                        margin: 5px;
-
-                    }
-
-                    
-
-
+                .estiloImg {
+                    width: 390px;
+                    height: 370px;
+                    margin: 5px;
                 }
+
+
+
+
             }
-        
+        }
+
     }
 }
 
@@ -194,20 +178,17 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-
                 margin-top: 50px;
 
                 .estiloImg {
                     width: 330px;
                     height: 310px;
                     margin: 5px;
-
                 }
 
                 .estiloTexto {
                     font-size: 14px;
                     margin-bottom: 180px;
-                 
                     margin-top: 5px;
                     height: 100px;
                     padding: 25px;
@@ -230,7 +211,6 @@
                 justify-content: space-evenly;
                 flex-wrap: wrap;
                 margin-top: 20px;
-                
 
                 .estiloImg {
                     width: 100%
@@ -238,7 +218,7 @@
 
                 .estiloTexto {
                     font-size: 14px;
-                    margin-bottom: 170px;
+                    margin-bottom: 240px;
                     height: 100px;
                     padding: 25px;
                 }

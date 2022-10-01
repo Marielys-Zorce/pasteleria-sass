@@ -1,109 +1,102 @@
 /*Estilos Main Index*/
 
-.main{
+.main {
     grid-area: main;
+
     /* Estilo Banner */
     .banner {
         img {
-        width: 100%; 
+            width: 100%;
         }
     }
 
-    section{
+    section {
+
         /* Estilo título Principal */
-        .titulo{
+        .titulo {
             @extend %estiloTitulo;
-    
-        } 
+        }
 
         /* Estilo Imagenes */
+        .centrar {
+            justify-content: space-between;
 
-    .centrar{
-        justify-content: space-between;
+            .imgIndex {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 60px;
+                margin-top: 30px;
 
-        .imgIndex {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:space-between;
-            margin-bottom: 60px;
-            margin-top: 30px;
-           
-                img{
-                                 
+                img {
                     border-radius: 8px;
                     margin-right: 10px;
                     margin-left: 2px;
                     margin-bottom: 10px;
                     margin-top: 20px;
-                    border: 2px  rgb(237, 174, 201) solid;  
+                    border: 2px rgb(237, 174, 201) solid;
+
                     /* tranformaciones animaciones */
-                    &:hover{
-                        transform:translate(5px, 5px);
+                    &:hover {
+                        transform: translate(5px, 5px);
                         transition: .3s;
-                    } 
+                    }
                 }
-            .subTitulo{
-                
-                margin-bottom: 5px;
-                margin-top: 25px;
-                font-weight: 200;
-                line-height: 1.2;
-                font-family: 'Taviraj', serif;
-                font-size: 2rem;
-                font-style: italic;
-                text-align: center;
-                color: darkgray;
+
+                .subTitulo {
+                    margin-bottom: 5px;
+                    margin-top: 25px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    font-family: 'Taviraj', serif;
+                    font-size: 2rem;
+                    font-style: italic;
+                    text-align: center;
+                    color: darkgray;
+                }
+
+                .textoJustificado {
+                    padding: 5px;
+                    text-align: justify;
+                    color: darkgray;
+                    font-style: oblique;
+                    bottom: 5px;
+                    top: 10px;
+                    line-height: 1.5;
+                    font-size: 18px;
+                }
+
             }
-            .textoJustificado {
-                
-                 padding: 5px;
-                
-                text-align: justify;
-                color: darkgray;
-                font-style:oblique;  
-                bottom: 5px;
-                top: 10px;
-                line-height: 1.5;
-                font-size: 18px;
-            }
-        
-    }
-   
-        
-        
-    
-        
-    }   
+
+
+
+
+
+        }
 
     }
-   
-    
-    
-  
-    
-    
-    
 
     /* Estilo Primera Sección */
-    .primeraSeccion{
+    .primeraSeccion {
         @include estiloFuente;
-        background-color:  rgb(247, 229, 241);
+        background-color: rgb(247, 229, 241);
     }
-    
+
     /* Estilo Segunda Sección */
-    .subTitulo{
-    margin-top: 10px;
-    margin-bottom: 0.5rem;
-    padding: 10px;
-    font-weight: 500;
-    line-height: 1.2;
-    font-family: 'Taviraj', serif;
-    font-size: 2rem;
-    font-style: italic;
-    text-align: center;
-    color: darkgray;
+    .tituloGrande {
+        margin-top: 10px;
+        margin-bottom: 0.5rem;
+        padding: 10px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: 'Taviraj', serif;
+        font-size: 2rem;
+        font-style: italic;
+        text-align: center;
+        color: darkgray;
     }
+
     .segundaSeccion {
         display: flex;
         flex-direction: row;
@@ -117,12 +110,13 @@
         font-size: 18px;
         font-weight: normal;
         font-style: italic;
+
         .enLinea {
             margin: 20px 0px;
             width: 200px;
-            height: 150px;  
+            height: 150px;
             margin: 20px 0px;
-            padding: 10px; 
+            padding: 10px;
         }
     }
 
@@ -138,13 +132,14 @@
         margin: 10px;
         margin-top: 100px;
         font-size: 18px;
+
         .input {
             border: 0.5px darkgray solid;
             width: 270px;
             height: 45px;
             padding: 8px;
         }
-                
+
         .boton {
             @extend %estiloBoton;
         }
@@ -152,10 +147,11 @@
     }
 
     /* Estilo Enlaces */
-    .enlaces{
+    .enlaces {
         display: flex;
         flex-direction: column;
         margin: 10px;
+
         .sinDecorar {
             text-decoration: none;
             color: darkgray;
@@ -173,14 +169,13 @@
 /* Estrategia Mobile Last */
 
 @media(max-width: 320px) {
-    .main{
-        section{
-            .centrar{
-                .imgIndex{
-                    .subTitulo{
-                            
+    .main {
+        section {
+            .centrar {
+                .imgIndex {
+                    .subTitulo {
                         margin-bottom: 5px;
-                        margin-top: 15px;
+                        margin-top: 5px;
                         font-weight: 200;
                         line-height: 1.2;
                         font-family: 'Taviraj', serif;
@@ -188,14 +183,14 @@
                         font-style: italic;
                         text-align: center;
                         color: darkgray;
+                        padding: 10px;
                     }
+
                     .textoJustificado {
-                        
-                         padding: 15px;
-                        
+                        padding: 15px;
                         text-align: justify;
                         color: darkgray;
-                        font-style:oblique;  
+                        font-style: oblique;
                         bottom: 5px;
                         top: 5px;
                         line-height: 1.5;
@@ -205,27 +200,14 @@
                 }
             }
 
-            
+        }
 
-                
-                
-                       
-                       
-        
-                    }
-                    }
-                    
+        /* Estilo Segunda Sección */
+        .tituloGrande {
+            font-weight: 500;
+            padding: 30px;
+            font-size: 25px;
+        }
 
-                    }
-                    
-            
-        
-
-        
-
-
-            
-    
-
-
-
+    }
+}

@@ -48,13 +48,12 @@
         }
 
         .iframeMapas {
-            margin: 90px;
+            margin: 70px;
             border-radius: 8px;
-            justify-content: center;
-            height: 300px;
-            height: 280px;
-            padding-left: 20px;
-            padding-right: 20px;
+            width:  580px;
+            height: 320px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 }
@@ -66,163 +65,177 @@
         .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 10px;
-                .estiloImg {
-                    width: 380;
-                    height: 360;
-                    margin: 5px;
-                }
-                .estiloTexto {
-                    font-size: 20px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    line-height: 1,5px;
-                }
+
+            .estiloImg {
+                width: 380;
+                height: 360;
+                margin: 5px;
+            }
+
+            .estiloTexto {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: 1, 5px;
+            }
         }
     }
 }
-   
+
 @media(max-width: 550px) {
-        .main {
-            .imgTex {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                margin-top: 10px;
-                    .estiloImg {
-                        width: 380;
-                        height: 260;
-                        margin: 5px;
-                    }
-                    .estiloTexto {
-                        font-size: 20px;
-                        margin-top: 5px;
-                        margin-bottom: 5px;
-                        line-height: 1,5px;
-                    }
-            }
-        }
- }
-    
-@media(max-width: 530px) {
-    .main {            
+    .main {
         .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 10px;
-                .estiloImg {
-                    width: 360;
-                    height: 340;
-                    margin: 5px;
-                }
-                .estiloTexto {
-                    font-size: 20px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    line-height: 1,5px;
-                }
+
+            .estiloImg {
+                width: 380;
+                height: 260;
+                margin: 5px;
+            }
+
+            .estiloTexto {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: 1, 5px;
+            }
         }
     }
 }
-        
+
+@media(max-width: 530px) {
+    .main {
+        .imgTex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            .estiloImg {
+                width: 360;
+                height: 340;
+                margin: 5px;
+            }
+
+            .estiloTexto {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: 1, 5px;
+            }
+        }
+    }
+}
+
 @media(max-width: 494px) {
     .main {
         .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 10px;
-                .estiloImg {
-                    width: 360;
-                    height: 340;
-                    margin: 5px;
-                }
-                .estiloTexto {
-                    font-size: 20px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    line-height: 1,5px;
-                }
+
+            .estiloImg {
+                width: 360;
+                height: 340;
+                margin: 5px;
+            }
+
+            .estiloTexto {
+                font-size: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: 1, 5px;
+            }
         }
     }
 }
+
 @media(max-width: 490px) {
     .main {
-         .imgTex {
+        .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 20px;
-                .estiloImg {
-                    width: 360px;
-                    height: 340px;
-                    margin: 5px;
-                }
+
+            .estiloImg {
+                width: 360px;
+                height: 340px;
+                margin: 5px;
+            }
         }
     }
 }
-       
+
 @media(max-width: 434px) {
     .main {
-         .imgTex {
+        .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 20px;
-                .estiloImg {
-                    width: 320px;
-                    height: 300px ;
-                    margin: 5px;
-                }
+
+            .estiloImg {
+                width: 320px;
+                height: 300px;
+                margin: 5px;
+            }
         }
     }
 }
-       
+
 @media(max-width: 432px) {
     .main {
-         .imgTex {
+        .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 20px;
-                .estiloImg {
-                    width: 320px;
-                    height: 300px ;
-                    margin: 5px;
-                }
+
+            .estiloImg {
+                width: 320px;
+                height: 300px;
+                margin: 5px;
+            }
         }
     }
 }
-       
+
 @media(max-width: 380px) {
     .main {
         .imgTex {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 50px;
-                .estiloImg {
-                    width: 300px;
-                    height: 280px;
-                    margin: 5px;
-                }
-                .estiloTexto {
-                    font-size: 16px;
-                    margin-bottom: 15px;
-                    margin-top: 5px;
-                    height: 100px;
-                    padding: 10px;
-                }
+
+            .estiloImg {
+                width: 280px;
+                height: 280px;
+                margin: 5px;
+            }
+
+            .estiloTexto {
+                font-size: 16px;
+                margin-bottom: 15px;
+                margin-top: 5px;
+                height: 100px;
+                padding: 10px;
+            }
         }
     }
 }
@@ -231,36 +244,31 @@
 @media(max-width: 320px) {
     .main {
         .imgTex {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                margin-top: 10px;
-                .estiloImg {
-                    width: 280px;
-                    height: 260px;
-                }
-                .estiloTexto {
-                                        
-                    margin-right: 3px;
-                    margin-left: 3px;
-                    font-size: 16px;
-                    margin-top: 5px;
-                    width: 280px;
-                    height: 150px;
-                    padding: 20px;
-                }
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+
+            .estiloImg {
+                width: 280px;
+                height: 260px;
+            }
+
+            .estiloTexto {
+                margin-right: 3px;
+                margin-left: 3px;
+                font-size: 16px;
+                margin-top: 5px;
+                width: 280px;
+                height: 150px;
+                padding: 20px;
+            }
         }
-        .iframeMapas {
-            margin: 80px;
-            border-radius: 8px;
-            justify-content: center;
-            height: 280px;
-            height: 280px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+
+        
     }
+
     .footer {
         .textoChico {
             p {
@@ -273,14 +281,3 @@
         }
     }
 }
-
-
-
-
-
-                
-
-
-            
-        
-    

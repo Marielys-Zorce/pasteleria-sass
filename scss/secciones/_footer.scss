@@ -1,30 +1,28 @@
 /*Estilos Footer*/
 
-.footer{
+.footer {
     grid-area: footer;
-    border-top: 2px  rgb(226, 212, 218) solid;
+    border-top: 2px rgb(226, 212, 218) solid;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 130px;
     /* gradientes */
-    background-image: linear-gradient(to top,  rgb(237, 174, 201),rgb(226, 212, 218) ); 
-    
-    .imgPago{
+    background-image: linear-gradient(to top, rgb(237, 174, 201), rgb(226, 212, 218));
+
+    .imgPago {
         width: 160px;
         height: 50px;
-        
-    
     }
-    .textoChico  {
+
+    .textoChico {
         font-size: 15px;
         color: black;
         position: relative;
         top: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
-        
     }
 
     .imgRedes {
@@ -32,11 +30,12 @@
         flex-direction: row;
         justify-content: center;
         height: 30px;
-        img{
+
+        img {
             width: 30px;
-            margin: 10px; 
+            margin: 10px;
         }
-        
+
     }
-   
+
 }
