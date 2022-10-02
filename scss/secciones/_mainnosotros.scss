@@ -21,8 +21,8 @@
 
             .estiloImg {
                 border-radius: 40px;
-                margin: 20px;
-                padding: 20px;
+                margin: 10px;
+                padding: 10px;
                 width: 500px;
                 height: 400px;
             }
@@ -170,7 +170,7 @@
     }
 }
 
-@media(max-width: 380px) {
+@media(max-width: 388px) {
     .main {
         .principal {
             .imgTex {
@@ -181,8 +181,8 @@
                 margin-top: 50px;
 
                 .estiloImg {
-                    width: 330px;
-                    height: 310px;
+                    width: 310px;
+                    height: 290px;
                     margin: 5px;
                 }
 
@@ -213,7 +213,9 @@
                 margin-top: 20px;
 
                 .estiloImg {
-                    width: 100%
+                    width: 290px;
+                    height: 270px;
+                    margin: 5px;
                 }
 
                 .estiloTexto {
